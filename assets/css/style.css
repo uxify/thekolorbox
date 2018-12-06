@@ -1,0 +1,456 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+a, a:hover{
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+
+#page{}
+.container{}
+
+
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:10;
+    transition-duration: 0.5s;
+}
+.logobox{
+    width: 145px;
+    float: left;
+    margin-top: 10px;
+    transition-duration: 0.5s;
+}
+.logobox a{}
+.headerBox{
+    display: inline-block;
+    float: right;
+}
+.topHeader{
+    float: right;
+    width: 100%;
+    text-align: right;
+    transition-duration: 0.5s;
+}
+.topHeaderIcon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 10px 0 0 15px;
+    cursor: pointer;
+}
+.topHeaderIcon.search{}
+.topHeaderIcon.addCart{}
+
+/*Main Nav*/
+.menuIconBox{
+    display: inline-block;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.menuIcon{
+    float: right;
+    width: 50px;
+    margin: 8px 0 0;
+    cursor: pointer;
+}
+.menuIcon span{
+    background: #f70000;
+    height: 3px;
+    width: 60px;
+    float: right;
+    margin: 3px 0;
+}
+/*Menu Box*/
+.menuBox{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 999;
+    transition-duration:0.25s;
+}
+.menuWrap{
+    float: right;
+    height: 100%;
+    padding: 1em;
+    background: #ffffffe6;
+    position: absolute;
+    right: -322px;
+    transition-duration:0.5s;
+}
+.menuClose{
+    position: absolute;
+    right: 36px;
+    top: 36px;
+    font-size: 48px;
+    line-height: 0;
+    font-weight: 100;
+    color: #c93f22;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.menuList{
+    margin-top: 75px;
+    width: 300px;
+    padding-left: 2em;
+}
+a.listWrap{
+    font-size: 24px;
+    width: 100%;
+    display: inline-block;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+a.listWrap:hover{
+    color: #fb3308;
+}
+
+.headerScroll{
+    background: #dac2a3;
+    padding: 5px 0;
+    transition-duration: 0.5s;
+    box-shadow: 0px 2px 13px #111;
+}
+.headerScroll .logobox{
+    width: 104px;
+    margin: 0;
+    transition-duration: 0.5s;
+}
+.headerScroll .topHeader{
+    width: auto;
+    float: left;
+    margin-right: 2em;
+    transition-duration: 0.5s;
+}
+.headerScroll .menuIconBox{
+    float: right;
+    width: auto;
+    transition-duration: 0.5s;
+}
+.headerScroll .menuIcon span{
+    width: 45px;
+}
+
+
+/*Content*/
+.content{
+    min-height: 500px;
+}
+.main{}
+.comingsoon{}
+.section{
+    min-height: 700px;
+}
+.heading{}
+
+/*Page*/
+.page{
+    min-height: 600px;
+}
+.pageTitle{
+    background: #96882d;
+    color: #fff;
+    padding-top: 73px;
+}
+.pageTitle h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin: 1em 0;
+}
+.pageContent{
+    font-size: 16px;
+    color: #555;
+}
+.contentTitle{
+    color: #df1603;
+}
+.contentTitle h4{
+    font-size: 32px;
+    font-weight: 200;
+    margin: 1em 0;
+}
+
+/*Home*/
+/*Section 1*/
+.sec1{
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+}
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    left: 0; 
+    top: -22%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+}
+.videoOverlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+.videoOverlayText{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+    font-weight: 100;
+}
+.imageOverlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    display:none;
+}
+.imageOverlay img{
+    width:auto;
+}
+
+/*Section 2*/
+.sec2{
+    background: #fff;
+    padding: 40px 0;
+}
+.boxWrap{
+    margin: 14px auto;
+    position: relative;
+}
+.boxImage{
+    padding: 0;
+}
+.boxTitle{
+    text-align: center;
+    font-size: 28px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 4px 10px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+.boxImageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1116;
+    opacity:0;
+    transition-duration: 0.5s;
+    
+}
+
+.boxWrap:hover .boxImageOverlay{
+    opacity:1;
+    transition-duration: 0.5s;
+}
+
+/*Section 3*/
+.sec3{
+    background: #c5d4ba;
+    padding: 5% 0;
+    min-height: 200px;
+    z-index: 1;
+}
+.sec3Content{
+    max-width: 900px;
+    margin: auto;
+}
+.sec3 .heading{
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+.sec3 .heading h2{
+    font-size: 26px;
+    margin-bottom: 1em;
+}
+.sec3 .sectionText{
+    padding: 0 1em;
+    font-size: 18px;
+    border-left: 3px solid #f00;
+}
+
+/*Section 4*/
+.sec4{
+    z-index: 0;
+}
+.imageSlider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.sliderBox{}
+.sliderImage{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.sliderImageWrap{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.sliderNav{}
+.slidernavBox{}
+.sliderButton{}
+.sliderFixed{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    background: #fff;
+    transition-duration:0.5s;
+}
+
+/*Section 5*/
+.sec5{
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    padding-top: 3%;
+    font-size: 24px;
+}
+.sec5 h2{
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+.contactSection{
+    margin: auto;
+    color: #777;
+}
+.contactText{
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+.phoneIcon{
+    width: 36px;
+}
+.contactNumber{
+    font-size: 18px;
+    margin-bottom: 1em;
+    padding-top: 7px;
+}
+a.contactSocial{
+    display: inline-block;
+    margin-right: 1em;
+}
+a.contactSocial .socialIcon{
+    width: 40px;
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+.socialText{
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+.formGroup{
+    margin-bottom: 1em;
+}
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup textarea{
+    border-radius: 17px;
+    border: 1px solid #ddd;
+    padding: 1px 1em;
+    font-size: 20px;
+    height: 42px;
+    width: 100%;
+    max-width: 400px;
+}
+.formGroup textarea{
+    height: 150px;
+}
+#submitContact{
+    border-radius: 18px;
+    border: none;
+    font-size: 18px;
+    height: 42px;
+    width: 150px;
+    background: #ffdc3a;
+}
+
+
+/*About*/
+.aboutImg{
+    padding: 2em;
+}
+
+
+/*Footer*/
+footer{}
+.footerTop{
+    background: #212121;
+    padding-top: 2em;
+    padding-bottom:2em;
+}
+a.footerLogo{
+    width: 150px;
+    display: inline-block;
+    margin: 0 auto 2em;
+}
+a.footerNav{
+    color: #999;
+    font-size: 16px;
+    float: left;
+    width: 100%;
+    margin-bottom: 3px;
+}
+a.footerNav:hover{
+    color:#fff;
+}
+.footerSocial{
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+}
+.footerSocial a.socialIcon{
+    display: inline-block;
+    width: 32px;
+    margin: 5px 10px;
+}
+
+.footerBottom{
+    background: #000;
+}
+.copyText{
+    font-size: 14px;
+    color: #999;
+    padding: 5px 0;
+}
+
